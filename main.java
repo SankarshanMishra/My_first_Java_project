@@ -2,8 +2,7 @@ public class Main{
     public static void main(Strting[] args){
        ProductService = new ProductService();
 
-       Product p = new Product(name:"Asus Vivobook", type:"Laptop",place:"Brown Table", warranty:2022)
-       services.addProduct(p);
+      
        services.addProduct(new Product(name:"Asus Vivobook", type:"Laptop",place:"Brown Table", warranty:2022));
        services.addProduct(new Product(name:"Apple keyboard", type:"keyboard",place:"Brown Table", warranty:2022));
        services.addProduct(new Product(name:"Logitech keyboard", type:"keyboard",place:"Brown Table", warranty:2022));
