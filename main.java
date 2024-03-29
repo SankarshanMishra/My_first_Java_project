@@ -1,39 +1,30 @@
-public class Main{
-    public static void main(Strting[] args){
-       ProductService = new ProductService();
+public class Main {
+    public static void main(String[] args) {
+        ProductService services = new ProductService();
 
-      
-       services.addProduct(new Product(name:"Asus Vivobook", type:"Laptop",place:"Brown Table", warranty:2022));
-       services.addProduct(new Product(name:"Apple keyboard", type:"keyboard",place:"Brown Table", warranty:2022));
-       services.addProduct(new Product(name:"Logitech keyboard", type:"keyboard",place:"Brown Table", warranty:2022));
-       services.addProduct(new Product(name:"Java Blackbook", type:"cable",place:"Brown Table", warranty:2022));
-       services.addProduct(new Product(name:"Logi Mouse", type:"Mouse",place:"Brown Table", warranty:2022));
-       services.addProduct(new Product(name:"Apple Mouse", type:"Mouse",place:"Brown Table", warranty:2022));
-       services.addProduct(new Product(name:" Mouse", type:"Mouse",place:"Brown Table", warranty:2022));
-       services.addProduct(new Product(name:"Lenovo Mouse", type:"Mouse",place:"Brown Table", warranty:2022));
-       services.addProduct(new Product(name:"blackbeast", type:"Computer",place:"Brown Table", warranty:2022));
+        services.addProduct(new Product("Asus Vivobook", "Laptop", "Brown Table", 2022));
+        services.addProduct(new Product("Apple keyboard", "keyboard", "Brown Table", 2022));
+        services.addProduct(new Product("Logitech keyboard", "keyboard", "Brown Table", 2022));
+        services.addProduct(new Product("Java Blackbook", "cable", "Brown Table", 2022));
+        services.addProduct(new Product("Logi Mouse", "Mouse", "Brown Table", 2022));
+        services.addProduct(new Product("Apple Mouse", "Mouse", "Brown Table", 2022));
+        services.addProduct(new Product(" Mouse", "Mouse", "Brown Table", 2022));
+        services.addProduct(new Product("Lenovo Mouse", "Mouse", "Brown Table", 2022));
+        services.addProduct(new Product("blackbeast", "Computer", "Brown Table", 2022));
 
+        System.out.println("===================================================");
 
-    //    List<Product> products = services.getAllProducts();
-    //    for(Product p: products){
-    //         System.out.println(p);
-    //    }
-       
-       
-       System.out.println("===================================================");
+        System.out.println("A Particular product");
 
-       System.out.println("a Particular product");
+        Product p = services.getProduct("Asus Vivobook");
+        System.out.println(p);
 
-       Product p = service.getProduct(name:"Asus Vivobook");
-       System.out.println(p);
+        System.out.println("===================================================");
+        System.out.println("A Particular text");
 
-       System.out.println("===================================================");
-       System.out.println("a Particular text");
-
-       List<Product> prods = service.getAllProductWithText(black:"black");
-       for(Product product : prods){
-        System.out.println(product);
-       }
-
+        List<Product> prods = services.getAllProductWithText("black");
+        for (Product product : prods) {
+            System.out.println(product);
+        }
     }
 }
